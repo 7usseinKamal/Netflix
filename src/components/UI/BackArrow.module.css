@@ -1,0 +1,8 @@
+.btn {
+  position: absolute;
+  top: 20px;
+  border: none;
+  color: var(--mainWhite);
+  background-color: transparent;
+  z-index: 1;
+}

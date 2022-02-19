@@ -1,0 +1,85 @@
+.profile {
+  background-color: #000;
+  border-top: 8px solid #222;
+  overflow: hidden;
+}
+
+.profile div {
+  color: var(--mainWhite);
+}
+
+.profile div:first-child {
+  position: relative;
+}
+
+.profile div .image {
+  height: 350px;
+  width: 70%;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.profile div h1 {
+  font-size: 50px;
+  margin-top: 120px;
+}
+
+.profile div p {
+  font-size: calc(50px / 2);
+  line-height: 30px;
+}
+
+@media (max-width: 992px) {
+  .profile div h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .profile div p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile div h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.profile div .box {
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #000;
+  border: 3px solid #222;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile div .box img {
+  height: 100%;
+}
+
+.profile div .box .download {
+  line-height: 2px;
+}
+
+.profile div .box .download h6 {
+  margin: 0;
+}
+
+.profile div .box .download p {
+  color: #005fb0;
+  font-size: 15px;
+  margin: 0;
+}
+
+.profile div .box .gif {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,60 @@
+.logout {
+  height: 100vh;
+  background: url("../../components/assets/Login The Crown.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logout ul {
+  padding-left: 0 !important;
+  margin-bottom: none !important;
+}
+
+.logout ul li {
+  list-style: none;
+}
+
+.logout ul li a {
+  color: var(--mainWhite);
+}
+
+.logout img {
+  height: 30px;
+}
+
+.logout ul li:nth-child(2) {
+  background-color: var(--mainRed);
+  color: var(--mainWhite);
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.card {
+  margin: 50px auto;
+  padding: 2.5rem;
+  width: 430px;
+  background-color: #fff;
+}
+
+.logout button {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: #007cf7;
+  color: #fff;
+  font-size: 18px;
+}
+
+.logout ul li:nth-child(2):hover,
+.logout button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .logout nav {
+    padding: 1.5rem 15px !important;
+  }
+  .logout {
+    background: #fff;
+  }
+}

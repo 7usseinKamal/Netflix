@@ -1,0 +1,41 @@
+.device {
+  background-color: #000;
+  border-top: 8px solid #222;
+}
+
+.device div {
+  color: var(--mainWhite);
+}
+
+.device video.video {
+  width: 100%;
+  height: auto;
+}
+
+.device div h1 {
+  font-size: 50px;
+  margin-top: 120px;
+}
+
+.device div p {
+  font-size: calc(50px / 2);
+  line-height: 30px;
+}
+
+@media (max-width: 992px) {
+  .device div h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .device div p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .device div h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}

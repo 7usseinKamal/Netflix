@@ -1,0 +1,8 @@
+.my-list {
+  overflow: hidden;
+}
+
+.my-list .h1 {
+  margin: 100px auto;
+  color: var(--mainWhite);
+}

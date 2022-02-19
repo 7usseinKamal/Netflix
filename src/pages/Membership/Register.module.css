@@ -1,0 +1,65 @@
+.register {
+  position: relative;
+}
+
+.register header {
+  height: 700px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../../images/Membership\ Background.jpg");
+  background-size: cover;
+}
+
+.register header nav ul {
+  padding-left: 0 !important;
+}
+
+.register header nav ul li img {
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .register header nav ul li img {
+    height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .register header {
+    padding: 25px 20px !important;
+  }
+  .register header nav ul li img {
+    height: 25px;
+  }
+}
+
+.register header nav ul li a {
+  color: var(--mainWhite);
+}
+
+.register header .form {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--mainWhite);
+}
+
+.register header .form h1 {
+  font-size: 50px;
+}
+
+@media (max-width: 550px) {
+  .register header .form h1 {
+    font-size: 30px;
+  }
+  .register header .form h3,
+  .register header .form p {
+    font-size: 20px;
+  }
+}

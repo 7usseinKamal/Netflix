@@ -1,0 +1,14 @@
+.spin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--mainRed);
+  border-left-color: transparent;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

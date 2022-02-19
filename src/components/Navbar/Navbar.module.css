@@ -1,0 +1,182 @@
+.nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  transition: background-color 0.5s ease;
+  z-index: 999999;
+}
+
+.scroll {
+  background-color: #000;
+}
+
+.nav ul {
+  width: 100%;
+}
+
+.nav ul li {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.nav ul .right .icon {
+  display: none;
+  font-size: 25px;
+  color: var(--mainWhite);
+}
+
+.nav ul .right li a img {
+  height: 30px;
+  margin-right: 15px;
+}
+
+.nav ul .right li a {
+  text-decoration: none;
+  color: var(--secondWhite);
+  margin-right: 15px;
+}
+
+.nav ul .right li a:hover {
+  color: var(--mainWhite);
+}
+
+.nav ul .right li a.active {
+  color: var(--mainWhite);
+}
+
+.links {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.show-links {
+  transform: translateX(0) !important;
+}
+
+div.block {
+  display: none !important;
+}
+
+.search,
+.not {
+  color: var(--mainWhite);
+  cursor: pointer;
+}
+
+.not {
+  font-size: 25px;
+}
+
+.search {
+  margin: 0 1rem;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .links {
+    order: -1;
+    position: absolute;
+    background-color: #000;
+    top: 62px;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    transform: translateX(-250px);
+  }
+  .links li:first-of-type {
+    margin-top: 25px;
+  }
+  .links li {
+    margin: 5px 0;
+  }
+  .links li a {
+    padding: 5px 0 5px 20px;
+  }
+  .links li a.active {
+    border-left: 3px solid var(--mainRed);
+  }
+  span.blockTwo {
+    display: none !important;
+  }
+  div.block {
+    display: flex !important;
+    padding-top: 20px;
+    padding-left: 22px;
+    border-bottom: 1px solid rgb(66, 66, 66);
+  }
+  div.block span {
+    cursor: auto;
+  }
+  div.block span > img {
+    height: 40px;
+    border-radius: 5px;
+  }
+  div.block span > small {
+    color: var(--secondWhite);
+  }
+  div.block button {
+    background-color: #000;
+    color: var(--secondWhite);
+    border: none;
+    padding-right: 106px;
+  }
+  .nav ul .right .icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 992px) {
+  .links {
+    transform: translateX(0px) !important;
+  }
+}
+
+.user-info {
+  cursor: pointer;
+}
+
+.user-info img {
+  height: 50px;
+  border-radius: 5px;
+}
+
+.block button:hover,
+.user-info svg {
+  color: var(--mainWhite);
+}
+
+.options {
+  position: absolute;
+  background-color: #000;
+  border-radius: 3px;
+  top: 65px;
+  right: 50px;
+  width: 100px;
+}
+
+.options p {
+  color: var(--mainWhite);
+  font-size: 13px;
+}
+
+.options button,
+.options abbr[title] {
+  background-color: black;
+  color: var(--mainWhite);
+  border: none;
+  outline: none;
+  margin: 2px;
+  text-decoration: none !important;
+}
+
+.options button svg,
+.options abbr svg {
+  color: var(--mainRed);
+}
+
+.options button:hover {
+  opacity: 0.7;
+}

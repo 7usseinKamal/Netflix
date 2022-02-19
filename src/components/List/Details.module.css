@@ -1,0 +1,192 @@
+.details {
+  width: 200%;
+  max-height: 0;
+  height: 400px;
+  opacity: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.details .lists {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  z-index: 9;
+}
+
+.details .lists .btns-wrapper {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+  width: 100%;
+  height: 40px;
+}
+
+.details .lists .btns-wrapper .control {
+  position: relative;
+  overflow: hidden;
+}
+
+.details .lists .btns-wrapper .control button {
+  color: var(--secondWhite);
+  padding: 5px 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.details .lists .btns-wrapper .control button:active,
+.details .lists .btns-wrapper .control button:hover,
+.details .lists .btns-wrapper .control button.active,
+.details .container .right-container div p,
+.details .left-container .left,
+.btn-container button,
+.btn-container a,
+.details .close {
+  color: var(--mainWhite);
+}
+
+.details .lists .btns-wrapper .control button:first-of-type {
+  margin-right: 15px;
+}
+
+.details .lists .btns-wrapper .control button:nth-child(2) {
+  margin-left: 15px;
+}
+
+.details .lists .btns-wrapper .control span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  width: 50%;
+  height: 3px;
+  background-color: var(--mainRed);
+  transition: 0.2s ease;
+}
+
+.details .container {
+  display: flex;
+  width: 100%;
+  transition: 0.2s ease;
+}
+
+.details .container .left-container,
+.details .container .right-container {
+  width: 50%;
+  background-color: #000;
+}
+
+.details .container .right-container .details-player {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.details .container .right-container div h4 {
+  color: rgb(161, 161, 161);
+}
+
+.details .container .right-container div p {
+  margin: 0;
+}
+
+.details .container .right-container div:nth-child(2) {
+  margin: 0 200px;
+}
+
+.details .left-container .left {
+  flex-shrink: 0 !important;
+  z-index: 5;
+  box-shadow: 30px 0px 85px 50px #000, 0 30px 85px 50px #000,
+    0 -30px 85px 50px #000;
+  width: 30%;
+  min-width: 237px;
+  margin-left: 45px;
+}
+
+.details .left-container .left h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.details .left-container .left .type {
+  border: 1px solid #fff;
+}
+
+.details .left-container .left div {
+  flex-shrink: 0 !important;
+  min-width: 500px;
+}
+
+.details .left-container .left div.breif {
+  min-width: 350px;
+}
+
+.btn-container button,
+.btn-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn-container a {
+  border-radius: 3px;
+  background-color: var(--mainRed);
+}
+
+.btn-container button {
+  border: 1px solid var(--mainWhite);
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.btn-container button:nth-child(3),
+.btn-container button:nth-last-child(1),
+.btn-container button:nth-last-child(2) {
+  border-radius: 50%;
+}
+
+.btn-container button abbr {
+  cursor: pointer;
+}
+
+.details .left-container .right {
+  width: 70%;
+}
+
+.details .left-container .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details .close {
+  font-size: 30px;
+  background-color: var(--mainRed);
+  border: none;
+  position: absolute;
+  right: 50%;
+  z-index: 5;
+}
+
+button.check {
+  cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+  .details {
+    display: none !important;
+  }
+}

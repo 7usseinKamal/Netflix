@@ -1,0 +1,27 @@
+.form {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.form button {
+  height: 60px;
+  font-size: 30px;
+  background-color: var(--mainRed);
+  color: #fff;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.form button.disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+@media (max-width: 826px) {
+  .form button {
+    margin: 50px auto;
+    padding: 5px 10px !important;
+    font-size: 20px;
+  }
+}

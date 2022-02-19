@@ -1,0 +1,95 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999999;
+  background-color: #000;
+}
+
+.modal nav {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 50px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.modal nav img {
+  height: 35px;
+}
+
+.modal-item {
+  position: relative;
+  height: 430px;
+}
+
+.modal-item .container {
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.modal-item .container,
+.watch > button,
+.back {
+  color: var(--mainWhite);
+}
+
+.type {
+  border: 1px solid #fff;
+}
+
+.watch > button,
+.back {
+  border: none;
+}
+
+.modal,
+.modal nav,
+.modal-item img,
+.watch > button,
+.back {
+  width: 100%;
+}
+
+.back {
+  background-color: rgb(32, 32, 32);
+}
+
+.watch > button:nth-of-type(2),
+.watch > button:last-of-type {
+  border: 1px solid var(--mainWhite);
+  background-color: transparent;
+}
+
+.watch > button {
+  background-color: var(--mainRed);
+  border-radius: 3px;
+  margin: 0 10px;
+}
+
+.modal,
+.modal-item img {
+  height: 100%;
+}
+
+.modal-item img {
+  object-fit: cover;
+}
+
+button.check {
+  cursor: not-allowed;
+}
+
+.watch > button > abbr {
+  cursor: pointer;
+}

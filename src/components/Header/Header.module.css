@@ -1,0 +1,44 @@
+header {
+  height: 600px;
+  position: relative;
+}
+
+header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+header .information {
+  position: absolute;
+  top: 60%;
+  left: 45px;
+  transform: translateY(-50%);
+  width: 300px;
+  min-width: 300px;
+  z-index: 5;
+  color: var(--mainWhite);
+}
+
+header .information .h {
+  font-size: 60px;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  header .information .h {
+    font-size: 35px;
+  }
+}
+
+header .information .btns-container button,
+header .information .btns-container a {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: saturate(180%) blur(10px);
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  text-decoration: none;
+}

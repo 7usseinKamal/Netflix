@@ -1,0 +1,6 @@
+.card {
+  background-color: var(--mainRed);
+  color: var(--mainWhite);
+  border-radius: 3px;
+  text-decoration: none;
+}

@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+}
+
+.input-search {
+  visibility: hidden;
+  width: 0;
+  transition: 0.5s;
+  border-radius: 5px;
+  border: none;
+}
+
+.input-search:focus {
+  outline: none !important;
+}
+
+.show {
+  visibility: visible;
+  width: 150px;
+}
+
+.search {
+  background-color: #000;
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: -50%;
+  width: 150%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px #ddd, -3px -3px 15px #ddd;
+  color: var(--mainWhite);
+}
+
+.search .param:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+p.wrong {
+  color: #f00;
+}
+
+.highlighted {
+  color: rgb(255, 255, 0);
+}
