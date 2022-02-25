@@ -64,7 +64,7 @@ const InputContainer = (props) => {
       props.type === "password"
     ) {
       inputRef.current.classList.add(classes.borderBottom);
-    } else if (message.indexOf("EMAIL") !== -1 && props.type === "password") {
+    } else if (message.indexOf("PASSWORD") !== -1 && props.type === "password") {
       inputRef.current.classList.add(classes.borderBottom);
     }
 
