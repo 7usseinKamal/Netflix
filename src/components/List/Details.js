@@ -69,9 +69,13 @@ const Details = React.forwardRef((props, ref) => {
     e.target.classList.add(classes.active);
     const pos = e.target.getBoundingClientRect();
     spanRef.current.style = `width: ${pos.width}px`;
-    spanRef.current.style =
-      "transform: translateX(calc((" + i * 100 + "%) + (" + i * 30 + "px)))";
-    containerRef.current.style = "transform: translateX(" + i * -50 + "%)";
+    spanRef.current.setAttribute(
+      "style",
+      `transform: translateX(calc((${i * 100}%) + (${i * 50}px))); width: ${
+        pos.width
+      }px`
+    );
+    containerRef.current.style = `transform: translateX(${i * -50}%)`;
   };
 
   // add item to list
