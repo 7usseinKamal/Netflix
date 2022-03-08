@@ -1,12 +1,12 @@
 import { movieActions } from "./movie-slice";
 import { uiActions } from "./ui-slice";
 
-// sendData
-export const sendData = (data) => {
+// send allData && send myList
+export const sendData = ({ data, type }) => {
   return async () => {
     const sendMovies = async () => {
       const response = await fetch(
-        "https://netflix-9d0d7-default-rtdb.firebaseio.com/movies.json",
+        `https://netflix-9d0d7-default-rtdb.firebaseio.com/${type}.json`,
         {
           method: "PUT",
           body: JSON.stringify(data),
@@ -65,32 +65,6 @@ export const getAllData = () => {
           message: err.message,
         })
       );
-    }
-  };
-};
-
-// send my list array
-export const sendList = (data) => {
-  return async () => {
-    const sendListItems = async () => {
-      const response = await fetch(
-        "https://netflix-9d0d7-default-rtdb.firebaseio.com/list.json",
-        {
-          method: "PUT",
-          body: JSON.stringify(data),
-          "Content-type": "application/json",
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Send data failed!");
-      }
-    };
-
-    try {
-      sendListItems();
-    } catch (err) {
-      console.log(err.message);
     }
   };
 };
