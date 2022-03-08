@@ -9,7 +9,6 @@ import {
   getAllData,
   getList,
   sendData,
-  sendList,
 } from "./components/store/movie-actions";
 import { movieActions } from "./components/store/movie-slice";
 import { data } from "./data";
@@ -78,7 +77,7 @@ const App = () => {
 
   // effect to send data
   useEffect(() => {
-    dispatch(sendData(data));
+    dispatch(sendData({ data, type: "movies" }));
   }, [dispatch]);
 
   // effect to get data
@@ -98,7 +97,7 @@ const App = () => {
     dispatch(movieActions.setDramaTypes());
     dispatch(movieActions.setRomanceTypes());
     if (blockTwo) {
-      dispatch(sendData(allData));
+      dispatch(sendData({ data: allData, type: "movies" }));
     }
     blockTwo = true;
   }, [dispatch, allData]);
@@ -106,7 +105,7 @@ const App = () => {
   // send my list array
   useEffect(() => {
     if (block) {
-      dispatch(sendList(myList));
+      dispatch(sendData({ data: myList, type: "list" }));
     }
     block = true;
   }, [dispatch, myList]);
