@@ -10,7 +10,9 @@ export const sendData = ({ data, type }) => {
         {
           method: "PUT",
           body: JSON.stringify(data),
-          "Content-Type": "application/json",
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
       );
 
