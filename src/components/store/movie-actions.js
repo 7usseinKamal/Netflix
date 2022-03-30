@@ -6,7 +6,7 @@ export const sendData = ({ data, type }) => {
   return async () => {
     const sendMovies = async () => {
       const response = await fetch(
-        `https://netflix-9d0d7-default-rtdb.firebaseio.com/${type}.json`,
+        `https://netflix-1365a-default-rtdb.firebaseio.com/${type}.json`,
         {
           method: "PUT",
           body: JSON.stringify(data),
@@ -40,7 +40,7 @@ export const getAllData = () => {
         })
       );
       const response = await fetch(
-        "https://netflix-9d0d7-default-rtdb.firebaseio.com/movies.json"
+        "https://netflix-1365a-default-rtdb.firebaseio.com/movies.json"
       );
 
       if (!response.ok) {
@@ -76,7 +76,7 @@ export const getList = () => {
   return async (dispatch) => {
     const getDataBack = async () => {
       const response = await fetch(
-        "https://netflix-9d0d7-default-rtdb.firebaseio.com/list.json"
+        "https://netflix-1365a-default-rtdb.firebaseio.com/list.json"
       );
 
       if (!response.ok) {
